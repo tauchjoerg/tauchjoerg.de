@@ -1,72 +1,53 @@
-<!DOCTYPE html> <html style lang=en>
+<!DOCTYPE html>
+<html style lang=en>
 <meta charset=utf-8>
 <meta http-equiv=X-UA-Compatible content="IE=edge">
-<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}footer,header,main,nav,section{display:block}a{background:transparent}a:active,a:hover{outline:0}img{border:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}a{color:#428bca;text-decoration:none}a:hover,a:focus{color:#2a6496;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}img{vertical-align:middle}h2{margin-top:20px;margin-bottom:10px}h4{margin-top:10px;margin-bottom:10px}p{margin:0 0 10px}ul{margin-top:0;margin-bottom:10px}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{margin-left:-15px;margin-right:-15px}.col-sm-3,.col-sm-4,.col-xs-6,.col-sm-6,.col-sm-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-6{float:left}.col-xs-6{width:50%}@media (min-width:768px){.col-sm-3,.col-sm-4,.col-sm-6,.col-sm-8,.col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-8{width:66.66666667%}.col-sm-6{width:50%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}}@-webkit-keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}@keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}.clearfix:before,.clearfix:after,.dl-horizontal dd:before,.dl-horizontal dd:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after,.form-horizontal .form-group:before,.form-horizontal .form-group:after,.btn-toolbar:before,.btn-toolbar:after,.btn-group-vertical>.btn-group:before,.btn-group-vertical>.btn-group:after,.nav:before,.nav:after,.navbar:before,.navbar:after,.navbar-header:before,.navbar-header:after,.navbar-collapse:before,.navbar-collapse:after,.pager:before,.pager:after,.panel-body:before,.panel-body:after{content:" ";display:table}.clearfix:after,.dl-horizontal dd:after,.container:after,.container-fluid:after,.row:after,.form-horizontal .form-group:after,.btn-toolbar:after,.btn-group-vertical>.btn-group:after,.nav:after,.navbar:after,.navbar-header:after,.navbar-collapse:after,.pager:after,.panel-body:after{clear:both}.pull-right{float:right!important}@-ms-viewport{width:device-width}body{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA+dpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCIgeG1wOkNyZWF0ZURhdGU9IjIwMTQtMDYtMzBUMTA6MDg6MDItMDc6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE0LTA3LTA5VDE4OjM5OjQyLTA3OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE0LTA3LTA5VDE4OjM5OjQyLTA3OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyQTE3NzJCOUY5QjcxMUUzOERGQkMyOEQyOUI0NTYxMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyQTE3NzJCQUY5QjcxMUUzOERGQkMyOEQyOUI0NTYxMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJBMTc3MkI3RjlCNzExRTM4REZCQzI4RDI5QjQ1NjExIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJBMTc3MkI4RjlCNzExRTM4REZCQzI4RDI5QjQ1NjExIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+RbIOYAAAAAZQTFRF7Ozs////tdKQegAAAAJ0Uk5T/wDltzBKAAAAGElEQVR42mJgYGTEROgAm9CoRtwaAQIMAL7mASEdpQrKAAAAAElFTkSuQmCC) repeat scroll}div.ccm-page{position:relative}div.ccm-page{font-family:Oxygen;font-weight:400;font-size:15px;line-height:1.42857143;-webkit-font-smoothing:antialiased}div.ccm-page h2{font-family:Oswald;font-size:1.46em;font-weight:700;color:#121212;line-height:1.42857143;text-transform:none}div.ccm-page h4{font-family:Oswald;font-weight:700;line-height:1.42857143;text-transform:none}div.ccm-page img{max-width:100%;height:auto}div.ccm-page main{background-color:rgba(253,221,0,0.96);padding-bottom:80px}div.ccm-page main a:not(.fa):not(.btn),div.ccm-page footer a:not(.fa):not(.btn){color:#fa9c38}div.ccm-page main a:not(.fa):not(.btn):hover,div.ccm-page footer a:not(.fa):not(.btn):hover{color:#d37f26;text-decoration:none}div.ccm-page header{background-color:rgba(253,221,0,0.96);padding-top:30px;padding-bottom:30px;border-bottom:1px solid #d9d9d9}div.ccm-page header #header-site-title{font-family:Oswald;font-weight:400;color:#cd6b5e;text-transform:none;line-height:1em;font-size:2em;-webkit-transition:color .2s linear;-o-transition:color .2s linear;transition:color .2s linear}div.ccm-page header #header-site-title:hover{color:#963b2f;text-decoration:none!important}div.ccm-page header nav ul{-webkit-font-smoothing:antialiased;list-style:none;margin-top:10px!important;padding:0px 0px 0px 0px;float:right}div.ccm-page div.area-content-accent{background-color:rgba(253,221,0,0.96);margin-top:80px;padding:65px 0px 65px 0px;margin-bottom:-80px}div.ccm-page div.ccm-block-feature-item{position:relative;margin-bottom:40px}div.ccm-page div.ccm-block-feature-item i{position:absolute;left:0px}div.ccm-page div.feature-home-page div.ccm-block-feature-item h4{color:#121212}div.ccm-page div.feature-home-page div.ccm-block-feature-item h4{font-size:1.5em}div.ccm-page div.feature-home-page div.ccm-block-feature-item i{color:#fa9c38;font-size:1.3em;top:1px}div.ccm-page div.feature-home-page div.ccm-block-feature-item{padding-left:45px}div.ccm-page .ccm-image-slider-container{border-bottom:2px solid #f0eee1;padding-top:20px;margin-bottom:70px;background-color:transparent;background-repeat:repeat}div.ccm-page .ccm-image-slider-container .ccm-image-slider{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}div.ccm-page .ccm-image-slider-container .ccm-image-slider .rslides li{max-height:220px}@media (min-width:480px) and (max-width:767px){div.ccm-page .ccm-image-slider-container .ccm-image-slider{width:100%}div.ccm-page .ccm-image-slider-container .ccm-image-slider .rslides li{max-height:320px}}@media (min-width:768px){div.ccm-page .ccm-image-slider-container .ccm-image-slider{width:750px}div.ccm-page .ccm-image-slider-container .ccm-image-slider .rslides li{max-height:350px}}@media (min-width:992px){div.ccm-page .ccm-image-slider-container .ccm-image-slider{width:970px}div.ccm-page .ccm-image-slider-container .ccm-image-slider .rslides li{max-height:429px}}@media (min-width:1200px){div.ccm-page .ccm-image-slider-container .ccm-image-slider{width:1170px}div.ccm-page .ccm-image-slider-container .ccm-image-slider .rslides li{max-height:480px}}div.ccm-page .ccm-image-slider-container .ccm-image-slider:before,div.ccm-page .ccm-image-slider-container .ccm-image-slider:after{content:" ";display:table}div.ccm-page .ccm-image-slider-container .ccm-image-slider:after{clear:both}div.ccm-page .ccm-image-slider-container .ccm-image-slider-inner{margin-left:-15px;margin-right:-15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width:1200px){div.ccm-page .ccm-image-slider-container .ccm-image-slider-inner{float:left;width:100%}}div.ccm-page .ccm-image-slider-container .ccm-image-slider-text h2{color:#000;font-family:Oswald;font-size:3em;font-weight:300;margin-bottom:5%}footer#footer-theme{color:#5b676c}footer#footer-theme section{border-top:1px solid #121212;padding-top:30px;padding-bottom:30px}footer#footer-theme section:first-child{background-color:rgba(253,221,0,0.96)}footer#footer-theme section:last-child{padding-bottom:30px;background-color:rgba(28,27,22,0.9)}footer#concrete5-brand{background-color:rgba(0,0,0,0.1);padding-top:20px;padding-bottom:20px}footer#concrete5-brand a.concrete5{color:#00baff}footer#concrete5-brand a.concrete5:hover{color:#008dc0}footer#concrete5-brand a{color:#9fa7aa}footer#concrete5-brand a:hover{color:#7b8083}.ccm-responsive-overlay{background:white;position:absolute;border-bottom:5px solid #cd6b5e;width:100%;z-index:99;top:120px;left:0px;padding-top:15px;padding-left:20px;-webkit-text-size-adjust:none}.ccm-responsive-overlay ul{padding-left:0}.ccm-responsive-menu-launch{display:none;cursor:pointer;margin-top:10px;float:right}.ccm-responsive-menu-launch i:after{font-size:20px;content:"\f0c9";font-family:FontAwesome;color:#8c979d;font-weight:normal;font-style:normal;display:inline-block;cursor:pointer;text-decoration:inherit}@media all and (max-width:767px){.ccm-responsive-menu-launch{display:block}.ccm-responsive-navigation.original{display:none}}@media all and (min-width:767px){.ccm-responsive-overlay{display:none!important}}.ccm-image-slider-container{background-image:url(data:text/html;base64,PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9JRVRGLy9EVEQgSFRNTCAyLjAvL0VOIj4KPGh0bWw+PGhlYWQ+Cjx0aXRsZT40MDQgTm90IEZvdW5kPC90aXRsZT4KPC9oZWFkPjxib2R5Pgo8aDE+Tm90IEZvdW5kPC9oMT4KPHA+VGhlIHJlcXVlc3RlZCBVUkwgd2FzIG5vdCBmb3VuZCBvbiB0aGlzIHNlcnZlci48L3A+CjwvYm9keT48L2h0bWw+Cg==)}</style>
-<title>Home :: tauchjoerg</title>
-<meta name=generator content=concrete5>
-<link rel=canonical href=http://tauchjoerg.de>
-<meta property=og:title content=Home>
-<meta property=og:description content>
-<meta property=og:type content=website>
-<meta property=og:url content=http://tauchjoerg.de>
-<meta property=og:site_name content=tauchjoerg>
-<meta name=twitter:card content=summary>
-<meta name=twitter:title content=Home>
-<meta name=twitter:description content>
-<meta property=og:locale content=de_DE>
-<meta property=og:updated_time content=2021-02-02T11:57:10+01:00>
-<style>@media only screen and (max-width:575px){.ccm-page .sg-204 .sg-item{width:calc(50% - 20px)}}@media only screen and (min-width:576px) and (max-width:991px){.ccm-page .sg-204 .sg-item{width:calc(33.333333333333% - 20px)}}@media only screen and (min-width:992px){.ccm-page .sg-204 .sg-item{width:calc(25% - 20px)}}.ccm-page .sg-204{margin-left:-10px;margin-right:-10px}.ccm-page .sg-204 .sg-item{margin:10px}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.pull-right{float:right}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.fa-search:before{content:"\f002"}.fa-pencil:before{content:"\f040"}.fa-calendar:before{content:"\f073"}</style>
-<style>.ccm-responsive-overlay{display:none}.rslides{position:relative;list-style:none;overflow:hidden;width:100%;padding:0}.rslides>li{-webkit-backface-visibility:hidden;width:100%;left:0;top:0}.rslides>li:first-child{position:relative;display:block;float:left}.rslides img{display:block;float:left;width:100%;border:0}.ccm-image-slider{position:relative}.ccm-image-slider-text{position:absolute;width:45%;left:0;top:10%}.ccm-image-slider-title{margin-top:auto}.rslides{margin:0 auto}.sg{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.sg-item{padding:0;width:calc(50% - 10px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative}@media only screen and (min-width:576px){.sg-item{width:calc(33.33333% - 10px)}}@media only screen and (min-width:992px){.sg-item{width:calc(25% - 10px)}}.sg-item-image{position:relative;z-index:1;overflow:hidden}.sg-item-overlay{display:block;float:left;position:absolute;top:0;right:0;width:100%;height:100%;z-index:2;background:0 0;-webkit-transition:background .4s;transition:background .4s}.sg-item:hover .sg-item-overlay{background:rgba(0,0,0,.6)}.sg-item-content{position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;z-index:3;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;overflow:hidden;color:#fff}.sg-item-content .fa{-webkit-transform:scale(0) translate3d(0,0,0);transform:scale(0) translate3d(0,0,0);-webkit-transition:-webkit-transform .4s,opacity .4s;transition:transform .4s,opacity .4s;font-size:30px}.sg-item:hover .sg-item-content .fa{-webkit-transform:scale(1) translate3d(0,0,0);transform:scale(1) translate3d(0,0,0)}</style>
+<style>
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}footer,header,main,nav,section{display:block}a{background:transparent}a:active,a:hover{outline:0}img{border:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}a{color:#428bca;text-decoration:none}a:hover,a:focus{color:#2a6496;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}img{vertical-align:middle}h2{margin-top:20px;margin-bottom:10px}h4{margin-top:10px;margin-bottom:10px}p{margin:0 0 10px}ul{margin-top:0;margin-bottom:10px}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}
+div.ccm-page{position:relative}div.ccm-page{font-family:Oxygen;font-weight:400;font-size:15px;line-height:1.42857143;-webkit-font-smoothing:antialiased}div.ccm-page h2{font-family:Oswald;font-size:1.46em;font-weight:700;color:#121212;line-height:1.42857143;text-transform:none}div.ccm-page h4{font-family:Oswald;font-weight:700;line-height:1.42857143;text-transform:none}div.ccm-page img{max-width:100%;height:auto}div.ccm-page main{background-color:rgba(253,221,0,0.96);padding-bottom:80px}div.ccm-page main a:not(.fa):not(.btn),div.ccm-page footer a:not(.fa):not(.btn){color:#fa9c38}div.ccm-page main a:not(.fa):not(.btn):hover,div.ccm-page footer a:not(.fa):not(.btn):hover{color:#d37f26;text-decoration:none}div.ccm-page header{background-color:rgba(253,221,0,0.96);padding-top:30px;padding-bottom:30px;border-bottom:1px solid #d9d9d9}div.ccm-page header #header-site-title{font-family:Oswald;font-weight:400;color:#cd6b5e;text-transform:none;line-height:1em;font-size:2em;-webkit-transition:color .2s linear;-o-transition:color .2s linear;transition:color .2s linear}div.ccm-page header #header-site-title:hover{color:#963b2f;text-decoration:none!important}div.ccm-page header nav ul{-webkit-font-smoothing:antialiased;list-style:none;margin-top:10px!important;padding:0px 0px 0px 0px;float:right}div.ccm-page div.area-content-accent{background-color:rgba(253,221,0,0.96);margin-top:80px;padding:65px 0px 65px 0px;margin-bottom:-80px}div.ccm-page div.ccm-block-feature-item{position:relative;margin-bottom:40px}div.ccm-page div.ccm-block-feature-item i{position:absolute;left:0px}div.ccm-page div.feature-home-page div.ccm-block-feature-item h4{color:#121212}div.ccm-page div.feature-home-page div.ccm-block-feature-item h4{font-size:1.5em}div.ccm-page div.feature-home-page div.ccm-block-feature-item i{color:#fa9c38;font-size:1.3em;top:1px}div.ccm-page div.feature-home-page div.ccm-block-feature-item{padding-left:45px}div.ccm-page .ccm-image-slider-container{border-bottom:2px solid #f0eee1;padding-top:20px;margin-bottom:70px;background-color:transparent;background-repeat:repeat}div.ccm-page .ccm-image-slider-container .ccm-image-slider{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}div.ccm-page .ccm-image-slider-container .ccm-image-slider .rslides li{max-height:220px}
+</style>
+<title>tauchjoerg.de</title>
+<link rel=canonical href=https://tauchjoerg.de>
+<meta property=og:updated_time content=2023-01-08>
+<style>
+@media only screen and (max-width:575px){.ccm-page .sg-204 .sg-item{width:calc(50% - 20px)}}
+@media only screen and (min-width:576px) and (max-width:991px){.ccm-page .sg-204 .sg-item{width:calc(33.333333333333% - 20px)}}
+@media only screen and (min-width:992px){.ccm-page .sg-204 .sg-item{width:calc(25% - 20px)}}.ccm-page .sg-204{margin-left:-10px;margin-right:-10px}.ccm-page .sg-204 .sg-item{margin:10px}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.pull-right{float:right}
+@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.fa-search:before{content:"\f002"}.fa-pencil:before{content:"\f040"}.fa-calendar:before{content:"\f073"}
+.ccm-responsive-overlay{display:none}
+.rslides{position:relative;list-style:none;overflow:hidden;width:100%;padding:0}.rslides>li{-webkit-backface-visibility:hidden;width:100%;left:0;top:0}.rslides>li:first-child{position:relative;display:block;float:left}.rslides img{display:block;float:left;width:100%;border:0}.ccm-image-slider{position:relative}.ccm-image-slider-text{position:absolute;width:45%;left:0;top:10%}.ccm-image-slider-title{margin-top:auto}.rslides{margin:0 auto}.sg{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.sg-item{padding:0;width:calc(50% - 10px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative}
+@media only screen and (min-width:576px){.sg-item{width:calc(33.33333% - 10px)}}
+@media only screen and (min-width:992px){.sg-item{width:calc(25% - 10px)}}
+
+.sg-item-image{position:relative;z-index:1;overflow:hidden}
+body {background-color:yellow;}
+img{max-width:40em;}
+
+</style>
 <meta name=viewport content="width=device-width, initial-scale=1.0">
-<link type=image/x-icon rel="shortcut icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></head>
+<link type=image/x-icon rel="shortcut icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+</head>
+
 <body>
-<div class="ccm-page ccm-page-id-1 page-template-full">
 <header>
- <div class=container>
- <div class=row>
- <div class="col-sm-4 col-xs-6">
-
- <p><a href=https://tauchjoerg.de id=header-site-title>Tauchjörg</a></p>
- </div>
- <div class="col-sm-8 col-xs-6">
-
-
-<nav class="ccm-responsive-navigation original"><ul></ul></nav><div class=ccm-responsive-menu-launch><i></i></div>
- </div>
- </div>
- </div>
+ <h1><a href=https://tauchjoerg.de>Tauchjörg</a></h1>
 </header>
 
 <main>
 
-<div class="ccm-image-slider-container ccm-block-image-slider-pages">
- <div class=ccm-image-slider>
- <div class=ccm-image-slider-inner>
- <ul class="rslides rslides1" id=ccm-image-slider-220>
- <li id=rslides1_s0 style="display:block;float:left;position:relative;opacity:1;z-index:2;transition:opacity 500ms ease-in-out 0s" class=rslides1_on>
- <img src="img/index.png" alt="Ich sehe nicht" width=1100 height=368> <div class=ccm-image-slider-text>
- <h2 class=ccm-image-slider-title>Ich sehe nicht</h2>
- </div>
- </li>
- </ul>
- </div>
- </div>
-</div>
-<div class=container><div class=row><div class=col-sm-12> <div class="ccm-custom-style-container ccm-custom-style-main-221">
- <h2 class=page-title>...und tauche doch!</h2>
-</div></div></div> </div>
-<div class=container><div class=row><div class=col-sm-12> <div class=row><div class=col-sm-4>
- <div class="ccm-custom-style-container ccm-custom-style-main15-215 feature-home-page">
- <div class=ccm-block-feature-item>
- <h3><a class=obfuscated-link href=mailto:joerg.arp@gmx.de><span class=obfuscated-link-text>joerg.arp@gmx.de</span></a></h3>
- <p>Jörg Arp, Gildering 29, 21075 Hamburg<br>
-040 69 64 74 41<br>
-Kontakte auf diesem Weg,<br>
-sind immer gern ge<span style=color:#3498db>see</span>hen!</p>
-</div>
- </div>
-</div><div class=col-sm-4>
-<div class="ccm-custom-style-container ccm-custom-style-main16-219 feature-home-page">
+ <img src="img/index.png" alt="Drei schwarze Kraken auf gelbem Untergrund, angeordnet im Dreieck, Spitze nach unten.">
+
+ <h2>Ich sehe nicht und tauche doch</h2>
+
+ <p>
+  Jörg Arp, Gildering 29, 21075 Hamburg<br>
+  <a href=mailto:joerg.arp@gmx.de>joerg.arp@gmx.de</a>
+  040 69 64 74 41<br>
+  Kontakte auf diesem Weg,<br>
+  sind immer gern ge<em>see</em>hen!
+ </p>
 
 <div class=ccm-block-feature-item>
 
@@ -134,95 +115,95 @@ Biografie von Willi Dittmann: Seiten 153-163
 </p>
 
 </div>
- </div>
-</div><div class=col-sm-4></div></div>
-</div></div></div>
+
+<h2>Bildergalerie</h2>
+
 <div class=container><div class=row><div class=col-sm-12>
  <div class="sg sg-204 js-sg">
- <a href=img/03.jpg title data-effect=mfp-zoom-in class=sg-item>
+ <a href=img/03.jpg title class=sg-item>
  <div class=sg-item-image>
  <img src="img/03.jpg" alt=03.jpg width=197 height=300>
  </div>
  </a>
 
- <a href=img/ImGedenkenAnKiel.jpg title data-effect=mfp-zoom-in class=sg-item>
+ <a href=img/ImGedenkenAnKiel.jpg title class=sg-item>
 
  <div class=sg-item-image>
  <img src="img/ImGedenkenAnKiel.jpg" alt=ImGedenkenAnKiel.jpg width=268 height=300>
  </div>
  </a>
 
- <a href=img/01.jpg title data-effect=mfp-zoom-in class=sg-item>
+ <a href=img/01.jpg title class=sg-item>
 
  <div class=sg-item-image>
  <img src="img/01.jpg" alt=01.jpg width=200 height=300>
  </div>
  </a>
 
- <a href=img/Tauchen_bei_Tauchen_und_Meer.jpg title data-effect=mfp-zoom-in class=sg-item>
+ <a href=img/Tauchen_bei_Tauchen_und_Meer.jpg title class=sg-item>
 
  <div class=sg-item-image>
  <img src=img/Tauchen_bei_Tauchen_und_Meer.jpg alt=Tauchen_bei_Tauchen_und_Meer.jpg width=225 height=300>
  </div>
  </a>
 
- <a href=img/Tauchfreunde_auf_dem_Wasser.jpg title data-effect=mfp-zoom-in class=sg-item>
+ <a href=img/Tauchfreunde_auf_dem_Wasser.jpg title class=sg-item>
 
  <div class=sg-item-image>
  <img src=img/Tauchfreunde_auf_dem_Wasser.jpg alt=Tauchfreunde_auf_dem_Wasser.jpg width=300 height=278>
  </div>
  </a>
 
- <a href=img/am_See.jpg title data-effect=mfp-zoom-in class=sg-item>
+ <a href=img/am_See.jpg title class=sg-item>
 
  <div class=sg-item-image>
  <img src=img/am_See.jpg alt=am_See.jpg width=300 height=183>
  </div>
  </a>
 
- <a href=img/am_Wasser_auch_im_Winter.jpg title data-effect=mfp-zoom-in class=sg-item>
+ <a href=img/am_Wasser_auch_im_Winter.jpg title class=sg-item>
 
  <div class=sg-item-image>
  <img src="img/am_Wasser_auch_im_Winter.jpg" alt=am_Wasser_auch_im_Winter.jpg width=300 height=225>
  </div>
  </a>
 
- <a href=img/auch_an_Bord_fuehle_ich_mich_wohl.jpg title data-effect=mfp-zoom-in class=sg-item>
+ <a href=img/auch_an_Bord_fuehle_ich_mich_wohl.jpg title class=sg-item>
 
  <div class=sg-item-image>
  <img src="img/auch_an_Bord_fuehle_ich_mich_wohl.jpg" alt=auch_an_Bord_fuehle_ich_mich_wohl.jpg width=300 height=225>
  </div>
  </a>
 
- <a href=img/ich_mag_Wind_und_Wellen.jpg title data-effect=mfp-zoom-in class=sg-item>
+ <a href=img/ich_mag_Wind_und_Wellen.jpg title class=sg-item>
 
  <div class=sg-item-image>
  <img src="img/ich_mag_Wind_und_Wellen.jpg" alt=ich_mag_Wind_und_Wellen.jpg width=300 height=225>
  </div>
  </a>
 
- <a href=img/joerg_am_meer.jpg title data-effect=mfp-zoom-in class=sg-item>
+ <a href=img/joerg_am_meer.jpg title class=sg-item>
 
  <div class=sg-item-image>
  <img src="img/joerg_am_meer.jpg" alt=joerg_am_meer.jpg width=300 height=225>
  </div>
  </a>
 
- <a href=img/joerg_arp.jpg title data-effect=mfp-zoom-in class=sg-item>
+ <a href=img/joerg_arp.jpg title class=sg-item>
 
  <div class=sg-item-image>
  <img src="img/joerg_arp.jpg" alt=joerg_arp.jpg width=136 height=300>
  </div>
  </a>
 
- <a href=img/joerg_im_raps.jpg title data-effect=mfp-zoom-in class=sg-item>
+ <a href=img/joerg_im_raps.jpg title class=sg-item>
 
  <div class=sg-item-image>
  <img src="img/joerg_im_raps.jpg" alt=joerg_im_raps.jpg width=300 height=225>
  </div>
  </a>
 
- <a href=img/schwan2.jpg title data-effect=mfp-zoom-in class=sg-item>
+ <a href=img/schwan2.jpg title class=sg-item>
 
  <div class=sg-item-image>
  <img src="img/schwan2.jpg" alt=schwan2.jpg width=300 height=225>
@@ -232,4 +213,4 @@ Biografie von Willi Dittmann: Seiten 153-163
  </div>
 </div></div></div>
 </main>
-</div>
+</body>
